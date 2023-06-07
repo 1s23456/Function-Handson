@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+              <meta charset="UTF-8">
+              <meta http-equiv="X-UA-Compatible" content="IE=edge">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Function Handson</title>
+              <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+              <h1 class="main">Function</h1>
+              <hr>
+              <!-- QUES1: -->
+             <h1>Q1: Create one function with zero parameter having a console statement.</h1> 
+             <pre class="box3">
+  Ans :-            function add(){
+                       let a=2;
+                       let b=3;
+                       let c=a+b;
+                 console.log(c)
+               }
+              add();
+             </pre>
+             <b>Explanation - </b>
+             <p>This code defines a function named add. Within this function, two variables are declared, a and b, and assigned values
+              of 2 and 3 respectively. Then, the values of a and b are added together and assigned to a new variable c. Finally,
+              the result of the addition, which is stored in c, is printed to the console using console.log.
+          
+              When the function add is called using add(); in the last line, it executes the code inside the function and logs the
+              result of the addition, which is 5.</p>
+             
+
+
+
+              <!-- QuES 2: -->
+             <h1>Q2: Create one function which takes two values as a parameter and print the sum of them as "Sum of 3 and 4 is 7" </h1>
+             <pre class="box3">
+  ANS:              function sum(x,y){
+                    let S= x+y;
+                    console.log("Sum of" + " " + x + " " +"and " + y + " is" + " "+ S)
+                    }
+                    sum(3,4)
+             </pre>
+             <b>Explanation - </b>
+             <p> This code defines a function named sum that takes two parameters. Inside the function body, there is a single statement
+              that logs the message "Sum of 3, 4 is 7" to the console using the console.log() method after calling the sum function.
+             </p>
+
+
+             <!-- Ques 3: -->
+             <h1>Q3: Create one arrow function.</h1>
+             <pre class="box3">
+               
+  Ans:            let product = (num1,num2)=>{
+                      console.log(num1*num2);
+                     }
+                  product(2,4)
+             </pre>
+             <b>Explanation - </b>
+             <p>This arrow function is called product that takes two parameters num1 and num2. The arrow => is used to define the function body,
+              which simply returns the product of num1 and num2.</p>
+
+
+             <!-- Ques 4: -->
+             <pre class="box1">Q4: Print output:
+                  var x = 21;
+                  var girl = function(){
+                            console.log(x);
+                            var x =20;
+                  };
+                  girl()
+               </pre>
+             <pre class="box3">
+  Ans:   OUTPUT is:- "undefined"
+             </pre>
+             <b>Explanation :</b>
+             <p>
+            The code defines a global variable x with the value 21. Then, it defines a function girl that logs a variable x to the
+             console. Inside the function, a new variable x is declared with the value 20, but it only has function scope and is not
+             the same as the global variable x. When the function is called and logs the variable x, the local variable x has not yet
+             been assigned a value, so it logs undefined to the console.
+             </p>
+     
+
+
+             <!-- QUES 5: -->
+             <pre class="box1">Q5 : Print Output :
+               var x = 21;
+               girl();
+               console.log(x)
+               function girl(){
+                    console.log(x);
+                    var x =20;
+               }
+             </pre>
+             <pre class="box3">
+    ANS:       OUTPUT is :-  undefined , 21
+             </pre>
+             <b>Explanation :</b>
+             <p>
+             In this code there is a global variable x with the value 21. It then calls the girl() function, which logs a variable x to
+             the console.
+             
+             When girl() is called, it logs undefined to the console because the local x has not yet been assigned a value. After the
+             function call, the global x value is logged to the console, which is 21.
+            </p>
+
+
+
+
+             <!-- QUES 6: -->
+             <pre class="box1">Q6: Print Output :
+               var x =21;
+               a();
+               b();
+               function a(){
+                    x = 20;
+                    console.log(x)
+               };
+               function b(){
+                    x =40 ;
+                    console.log(x)
+               }
+             </pre>
+             <pre class="box3">
+  ANS:      OUTPUT is : 20 , 40
+             </pre>
+             <b>Explanation :</b>
+             <p>
+             This code creates a global variable x with the value 21. It then calls two functions a() and b() that both manipulate
+             the value of x and log it to the console.
+             
+             The function a() assigns x a value of 20 and logs it to the console. This changes the global value of x from 21 to 20.
+             
+             The function b() then assigns x a value of 40 and logs it to the console. This further changes the global value of x
+             from 20 to 40.
+            </p>
+
+
+             
+             <!-- QUes 7 : -->
+             <h1>Q7 : Write the function that accepts parameter n and returns factorial of n.</h1>
+             <pre class="box3">
+      ANS:   function factorial(n){
+                          let result = 1 ;
+                          for(let i = 1;i<=n ; i++){
+                              result = result * i;
+                        }
+                          return result ;
+                    }
+                    console.log(factorial(5));
+             </pre>
+             <pre class="box3">
+              OUTPUT IS : 120
+             </pre>
+             <b>Explanation:</b>
+             <p>
+             This function uses a for loop to calculate the factorial of n. It starts with a result of 1 and then multiplies it by
+             every number from 1 to n.
+             </p>
+
+
+
+             <h1 class="head">Day 2</h1>
+             <hr>
+
+             <!-- QUES 1 : -->
+             <pre class="box2">
+Q1 : Guess the Output :
+                  function FindSum(a,b){
+                    return a + b;
+                  }
+                  function DisplayData(data,batch){
+                    console.log(`i am ${data} and My batch is EA${batch}`)
+                  }
+                  DisplayData("Prepbytes",FindSum(10,9));
+             </pre>
+             <pre class="box4">OUTPUT IS : i am Prepbytes and My batch is EA19 </pre>
+             <b>Explanation:</b>
+             <p>
+             The code has two functions: "FindSum" and "DisplayData".
+             
+             The "FindSum" function takes two parameters "a" and "b" and returns the sum of their values using the addition operator.
+             So if I call the function with the arguments "10" and "9", it will return the value as "19".
+             
+             The code calls the "DisplayData" function with the arguments "PrepBytes" and the result of calling "FindSum"
+             with the arguments "10" and "9". This means that the "FindSum" function will return the value "19", and that value will
+             be passed as the second argument to "DisplayData". As a result, the final output displayed in the console will be "i am from PrepBytes and My batch is EA19".
+             </p>
+
+
+             <!-- QUES 2: -->
+             <pre class="box2">
+Q2: Guess the Output :
+               Abc();
+               const Abc = function(){
+                    let value = 20;
+                    console.log(value);
+               }
+             </pre>
+             <pre class="box4"> OUTPUT IS : Error </pre>
+             <b>Explanation:</b>
+             <p>
+        This code will result in an error because the function "Abc" is declared using a function expression which is assigned
+        to a variable using the "const" keyword.
+        
+        When the program starts running, the "Abc()" function is called before it is declared. However, function expressions are
+        not hoisted like function declarations, meaning that they cannot be called before they are defined. So it will through an error.
+</p>
+
+             <!-- QUES 3 : -->
+             <pre class="box2">
+Q3 : Guess the Output:
+                var a = 10;
+                (function (){
+                    console.log(a);
+                    var a =20;
+                })();
+             </pre>
+             <pre class="box4"> OUTPUT IS : Undefined</pre>
+        <b>Explanation:</b>
+        <p>
+        The output of this code is "undefined" because of variable hoisting, which causes the declaration of "a" to be moved to
+        the top of the function scope, but its value is not assigned until later in the function.
+        </p>
+
+
+             <!-- QUES 4: -->
+             <pre class="box2">
+Q4 : Guess the Output:
+                     const greet =  function(name){
+                        return function(m){
+                      console.log(`Hi!! ${name}, ${m}`);
+                        }
+                     }  
+                  const greet_message = greet('EA19');
+                   greet_message(""Welcome To PrepBytes"")"
+             </pre>
+             <pre class="box4"> OUTPUT IS :Hi!! EA19, Welcome To Prepbytes</pre>
+
+
+              <script type="text/javascript" src="./style.js"></script>
+              
+</body>
+</html>

@@ -1,0 +1,60 @@
+body{
+              background-color: blueviolet;
+}
+
+.main{
+              text-align: center;
+              border: 1px solid red;
+              width: 220px;
+              background-color: brown;
+              color: white;
+              position: relative;
+              left: 520px;
+              font-size: 50px;
+            
+}
+h1{
+              color:greenyellow;
+}
+
+.box1{
+              color: greenyellow;
+              font-size: xx-large;
+}
+
+.box2{
+              color: red;
+              font-size: xx-large;
+}
+
+.head{
+              text-align: center;
+              border: 1px solid;
+              width: 220px;
+              background-color:coral;
+              color: white;
+              position: relative;
+              left: 520px;
+              font-size: 50px;
+              
+}
+
+.box3{
+              font-size: x-large;
+              color: aquamarine;
+}
+
+.box4{
+              font-size: x-large;
+              color: yellow;
+
+}
+
+b{
+              font-size: 30px;
+}
+
+p{
+              color: goldenrod;
+              font-size: large;
+}
